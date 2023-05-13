@@ -1,21 +1,30 @@
+/* General */
+
+@font-face {
+  font-family: Cursive;
+  src: url(./fonts/cursive.rtf) format('rtf'),
+    url(./fonts/cursive.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Berlin;
+  src: url(./fonts/berlin.ttf) format('ttf');
+}
+
 html, body {
   height: 100%;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Berlin, Arial, Helvetica, sans-serif;
 
-}
-
-.wrapper {
-  position: relative;
-  min-height: calc(100%-130px);
-  padding-bottom: 130px;
 }
 
 button:hover {
   cursor: pointer;
-  scale: 1.03;
+  scale: 1.09;
+  background-color: black;
+  color: white;
 }
 
 button:active {
@@ -36,13 +45,21 @@ hr {
   margin: 60px 0px 20px;
 }
 
+.wrapper {
+  position: relative;
+  min-height: calc(100%-130px);
+  padding-bottom: 130px;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   height: 100px;
   width: 100%;
-  background: black;
+  background-color: white;
+  border-bottom: 2px solid #9a9a9a;
+  box-shadow: 0px 1px 15px #9a9a9a;
  
   display: flex;
   align-items: center;
@@ -65,19 +82,32 @@ header > button {
   padding-top: 101px;
 }
 
-.logo {
-  margin-top: 20px;
-  width: 333px;
+footer {
+  position: absolute;
+  width: 100%;
+  height: 130;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
+
+.sources {
+  word-spacing: 20px;
+}
+
+
+
+/* Home Page */
 
 .main > p {
   width: 777px;
   text-align: center;
 }
 
-.descripton {
-  margin-top: 90px;
-  font-size: 22px;
+.logo {
+  margin-top: 20px;
+  width: 333px;
 }
 
 .pizza {
@@ -86,25 +116,18 @@ header > button {
 }
 
 .blurb {
-  font-size: 22px;
+  font-family: Cursive, Arial, Helvetica, sans-serif;
+  font-size: 27px;
   color: rgb(99, 98, 98);
   margin-bottom: -5px;
 }
 
+.descripton {
+  margin-top: 90px;
+  font-size: 22px;
+}
+
 .hours {
  width: 300px;
- margin: 50px 0px;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  height: 130;
-  bottom: 0;
-  background-color: rgb(191, 191, 191);
-  text-align: center;
-}
-
-.sources {
-  word-spacing: 20px;
+ margin: 50px 0px 115px;
 }
