@@ -1,8 +1,39 @@
-. {
+html, body {
+  height: 100%;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.wrapper {
+  position: relative;
+  min-height: calc(100%-130px);
+  padding-bottom: 130px;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.03;
+}
+
+button:active {
+  background-color: rgb(206, 206, 206);
+}
+
+a {
+  color: rgb(25, 119, 25);
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+hr {
+  width: 700px;
+  margin: 60px 0px 20px;
 }
 
 header {
@@ -27,15 +58,6 @@ header > button {
   
 }
 
-button:hover {
-  cursor: pointer;
-  scale: 1.03;
-}
-
-button:active {
-  background-color: rgb(206, 206, 206);
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -43,6 +65,46 @@ button:active {
   padding-top: 101px;
 }
 
-.title {
-  font-size: 50px
+.logo {
+  margin-top: 20px;
+  width: 333px;
+}
+
+.main > p {
+  width: 777px;
+  text-align: center;
+}
+
+.descripton {
+  margin-top: 90px;
+  font-size: 22px;
+}
+
+.pizza {
+  margin:70px 0px 30px;
+  width: 777px;
+}
+
+.blurb {
+  font-size: 22px;
+  color: rgb(99, 98, 98);
+  margin-bottom: -5px;
+}
+
+.hours {
+ width: 300px;
+ margin: 50px 0px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 130;
+  bottom: 0;
+  background-color: rgb(191, 191, 191);
+  text-align: center;
+}
+
+.sources {
+  word-spacing: 20px;
 }
