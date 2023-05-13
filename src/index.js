@@ -1,4 +1,4 @@
 import './style.css';
+import { initializeWebsite } from './website.js';
 
-
-console.log('hello world!');
+initializeWebsite();
