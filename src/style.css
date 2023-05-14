@@ -42,7 +42,7 @@ img {
 
 hr {
   width: 700px;
-  margin: 60px 0px 20px;
+  margin: 60px 0px 40px;
 }
 
 .wrapper {
@@ -80,6 +80,7 @@ header > button {
   flex-direction: column;
   align-items: center;
   padding-top: 101px;
+  min-height: 100vh;
 }
 
 footer {
@@ -122,9 +123,11 @@ footer {
   margin-bottom: -5px;
 }
 
-.descripton {
-  margin-top: 90px;
-  font-size: 22px;
+.description {
+  margin-top: 60px;
+  font-size: 20px;
+  color: #474747;
+  font-style: italic;
 }
 
 .hours {
