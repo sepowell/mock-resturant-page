@@ -3,9 +3,8 @@ import pizzaImage from './images/pizza.jpeg';
 import hoursImage from './images/hours.jpg';
 
 function loadHome() {
-  const main = document.getElementById('main');
-
-  const descriptionText = "Welcome to your one-stop shop for delicious and authentic pizzas! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+  let main = document.getElementById('main');
+  main.innerHTML = '';
 
   const logo = document.createElement('img');
   logo.src = logoImage;
@@ -24,6 +23,8 @@ function loadHome() {
   blurb.classList.add('blurb');
 
   const breakTwo = document.createElement('hr');
+
+  const descriptionText = "Welcome to your one-stop shop for delicious and authentic pizzas! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   const description = document.createElement('p');
   description.textContent = descriptionText;
@@ -46,6 +47,7 @@ function loadHome() {
   main.appendChild(breakThree);
   main.appendChild(hours);
 
+  console.log('main page loaded!');
 }
 
 export { loadHome };

@@ -1,16 +1,27 @@
 import { loadHome } from './home';
+import { loadMenu } from './menu';
+import { loadContact} from './contact';
 
 function loadHeader() {
   const header = document.createElement('header');
   
   const homeButton = document.createElement('button');
   homeButton.textContent = 'Home';
+  homeButton.addEventListener ('click', (e) => {
+    changePage('home');
+  });
 
   const menuButton = document.createElement('button');
   menuButton.textContent = 'Menu';
+  menuButton.addEventListener ('click', (e) => {
+    changePage('menu');
+  })
 
   const contactButton = document.createElement('button');
   contactButton.textContent = 'Contact';
+  contactButton.addEventListener('click', (e) => {
+    changePage('contact');
+  })
 
   header.appendChild(homeButton);
   header.appendChild(menuButton);
@@ -67,6 +78,20 @@ function loadFooter() {
   return footer;
 }
 
+function changePage(page) {
+  switch (page) {
+    case 'home':
+      loadHome();
+      break;
+    case 'menu':
+      loadMenu();
+      break;
+    case 'contact':
+      loadContact();
+      break;
+  }
+}
+
 function initializeWebsite() {
   const wrapper = document.getElementById('wrapper');
   
@@ -75,8 +100,6 @@ function initializeWebsite() {
   wrapper.appendChild(loadFooter());
 
   loadHome();
-
-  console.log('testing');
 
 }
 
