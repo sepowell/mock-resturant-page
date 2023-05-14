@@ -25,6 +25,7 @@ button:hover {
   scale: 1.09;
   background-color: black;
   color: white;
+  box-shadow: 5px 10px 14px #9a9a9a;
 }
 
 button:active {
@@ -64,7 +65,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 169px;
 }
 
 header > button {
@@ -83,6 +84,16 @@ header > button {
   min-height: 100vh;
 }
 
+.main > p {
+  width: 777px;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 333px;
+}
+
 footer {
   position: absolute;
   width: 100%;
@@ -95,21 +106,12 @@ footer {
 
 .sources {
   word-spacing: 20px;
+  line-height: 20px;
 }
 
 
 
 /* Home Page */
-
-.main > p {
-  width: 777px;
-  text-align: center;
-}
-
-.logo {
-  margin-top: 20px;
-  width: 333px;
-}
 
 .pizza {
   margin:70px 0px 30px;
@@ -133,4 +135,29 @@ footer {
 .hours {
  width: 300px;
  margin: 50px 0px 115px;
+}
+
+/* Contact Page */
+
+.customer-support {
+  width: 444px;
+}
+
+.contact-sub-titles {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.phone-number {
+  color: rgb(25, 119, 25);
+  text-decoration: underline;
+}
+
+.phone-number:hover {
+  cursor: pointer;
+}
+
+.staff-image {
+  width: 800px;
+  margin: 115px 0px 175px;
 }

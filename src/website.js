@@ -67,6 +67,12 @@ function loadFooter() {
   linkThree.textContent = 'starline';
   linkThree.href = "https://www.freepik.com/free-vector/24-hour-service-3d-text-background_25694907.htm#query=24%20hours%20sign%20white%20background&position=10&from_view=search&track=ais";
 
+  const breakOne = document.createElement('br');
+
+  const linkFour = document.createElement('a');
+  linkFour.textContent = 'freepik';
+  linkFour.href = "https://www.freepik.com/free-vector/flat-design-illustration-customer-support_12982910.htm#query=customer%20support&position=0&from_view=search&track=ais";  
+
   footer.appendChild(createdBy);
   createdBy.appendChild(gitProfileLink);
   footer.appendChild(imagesFrom);
@@ -74,6 +80,8 @@ function loadFooter() {
   sources.appendChild(linkOne);
   sources.appendChild(linkTwo);
   sources.appendChild(linkThree);
+  sources.appendChild(breakOne);
+  sources.appendChild(linkFour);
 
   return footer;
 }
