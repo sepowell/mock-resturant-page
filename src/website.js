@@ -70,8 +70,12 @@ function loadFooter() {
   const breakOne = document.createElement('br');
 
   const linkFour = document.createElement('a');
-  linkFour.textContent = 'freepik';
+  linkFour.textContent = 'freepik ';
   linkFour.href = "https://www.freepik.com/free-vector/flat-design-illustration-customer-support_12982910.htm#query=customer%20support&position=0&from_view=search&track=ais";  
+
+  const linkFive = document.createElement('a');
+  linkFive.textContent = 'macrovector';
+  linkFive.href = "https://www.freepik.com/free-vector/menu-template-restaurant-pizzeria_3795039.htm#query=fake%20pizza%20menu&position=5&from_view=search&track=ais";
 
   footer.appendChild(createdBy);
   createdBy.appendChild(gitProfileLink);
@@ -82,6 +86,7 @@ function loadFooter() {
   sources.appendChild(linkThree);
   sources.appendChild(breakOne);
   sources.appendChild(linkFour);
+  sources.appendChild(linkFive);
 
   return footer;
 }
